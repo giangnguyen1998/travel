@@ -4,13 +4,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 import vn.nuce.Utils;
+import vn.nuce.dto.ImageDto;
 import vn.nuce.dto.TourDto;
 import vn.nuce.dto.UserDto;
+import vn.nuce.service.impl.ImageServiceImpl;
 import vn.nuce.service.impl.TourServiceImpl;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.io.File;
+import java.io.IOException;
 import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
@@ -21,6 +26,9 @@ public class AdminTourController {
 
     @Autowired
     TourServiceImpl service;
+
+    @Autowired
+    ImageServiceImpl imageService;
 
     @GetMapping("/tours")
     public String showPage(HttpSession session, ModelMap modelMap) {
@@ -44,7 +52,7 @@ public class AdminTourController {
         setUser(session, modelMap);
 
         TourDto dto = service.findOneTour(id);
-
+        modelMap.addAttribute("images", imageService.findAllImage(id));
         modelMap.addAttribute("tour", dto);
 
         return "/admin/tour_info";
@@ -64,6 +72,7 @@ public class AdminTourController {
                              @RequestParam(name = "breakfast") Long breakfast,
                              @RequestParam(name = "price") Long price,
                              @RequestParam(name = "address") String address,
+                             @RequestParam(name = "images") List<MultipartFile> files,
                              HttpSession session, HttpServletRequest request) {
         TourDto dto = new TourDto();
         dto.setTourName(name);
@@ -73,8 +82,29 @@ public class AdminTourController {
         dto.setTourDescription(description);
         switch (action) {
             case "create":
+                List<String> fileNames = new ArrayList<>();
+                if (null != files && files.size() > 0) {
+                    for (MultipartFile multipartFile : files) {
+
+                        String fileName = multipartFile.getOriginalFilename();
+                        fileNames.add(fileName);
+                        File imageFile = new File("E:\\anroid\\travel\\src\\main\\webapp\\resources\\image", fileName);
+                        try {
+                            multipartFile.transferTo(imageFile);
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
                 try {
-                    service.saveTour(dto);
+                    dto.setCreatedDate(new Timestamp(System.currentTimeMillis()));
+                    TourDto tourDto = service.updateTour(dto);
+                    for (String fileName : fileNames) {
+                        ImageDto imageDto = new ImageDto();
+                        imageDto.setImageUrl("resources/image/" + fileName);
+                        imageDto.setTourEntity(tourDto);
+                        imageService.saveImage(imageDto);
+                    }
                     session.setAttribute("status", "success");
                 } catch (Exception e) {
                     session.setAttribute("status", "fail");

@@ -3,6 +3,7 @@ package vn.nuce.service.impl;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import vn.nuce.dto.UserDto;
 import vn.nuce.entity.UserEntity;
 import vn.nuce.repository.impl.UserRepositoryImpl;
@@ -13,6 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
+@Transactional
 public class UserServiceImpl implements UserService {
     @Autowired
     UserRepositoryImpl repository;

@@ -1,5 +1,8 @@
 package vn.nuce.dto;
 
+import org.springframework.web.multipart.MultipartFile;
+import vn.nuce.entity.ImageEntity;
+
 import java.io.Serializable;
 import java.sql.Timestamp;
 import java.util.List;

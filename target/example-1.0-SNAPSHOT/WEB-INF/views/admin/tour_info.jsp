@@ -390,7 +390,8 @@
                         </h2>
                     </div>
                     <div class="body">
-                        <form id="form_validation" method="POST" action="/admin/tour/info">
+                        <form id="form_validation" method="POST" action="/admin/tour/info"
+                              enctype="multipart/form-data">
                             <div class="form-group form-float">
                                 <div class="form-line">
                                     <input type="text" class="form-control" name="tour_name" value="${tour.tourName}"
@@ -436,24 +437,20 @@
                                     <input type="hidden" name="action" value="create">
                                 </c:otherwise>
                             </c:choose>
-<%--                            <div class="form-group">--%>
-<%--                                <label for="mydropzone">Documents</label>--%>
-<%--                                <div class="clsbox-1">--%>
-<%--                                    <div class="dropzone clsbox" id="mydropzone">--%>
-<%--                                        <div class="dz-message">--%>
-<%--                                            <div class="drag-icon-cph">--%>
-<%--                                                <i class="material-icons">touch_app</i>--%>
-<%--                                            </div>--%>
-<%--                                            <h3>Drop files here or click to upload.</h3>--%>
-<%--                                            <em>(This is just a demo dropzone. Selected files are <strong>not</strong>--%>
-<%--                                                actually uploaded.)</em>--%>
-<%--                                        </div>--%>
-<%--                                        <div class="fallback">--%>
-<%--                                            <input name="file" type="file" id="images" />--%>
-<%--                                        </div>--%>
-<%--                                    </div>--%>
-<%--                                </div>--%>
-<%--                            </div>--%>
+                            <c:choose>
+                                <c:when test="${not empty images}">
+                                    <div style="display: flex;margin: 10px;">
+                                        <c:forEach var="image" items="${images}">
+                                            <img src="/${image.imageUrl}" width="auto" height="100px" style="margin-right: 15px">
+                                        </c:forEach>
+                                    </div>
+                                </c:when>
+                                <c:otherwise>
+                                    <input id="browse" type="file" name="images" onchange="previewFiles()"
+                                           multiple="multiple" required>
+                                    <div id="preview" style="margin: 10px"></div>
+                                </c:otherwise>
+                            </c:choose>
                             <button type="submit" id="btn-save" class="btn btn-primary" style="margin-top: 30px">Save
                                 Changes
                             </button>
@@ -596,21 +593,36 @@
         contextmenu: "link image imagetools table configurepermanentpen",
         mentions_selector: '.mymention'
     });
-    //
-    // $(() => {
-    //     const options = {
-    //         autoProcessQueue: false,
-    //         url: "/file/post"
-    //     };
-    //     const myDropzone = new Dropzone($('#mydropzone').get(0), options);
-    //
-    //     $('#images').on('change',function () {
-    //         myDropzone.addFile($('#images').get(0));
-    //     });
-    //
-    //     console.log(myDropzone.files);
-    //
-    // });
+
+    function previewFiles() {
+        let preview = document.querySelector('#preview');
+        let files = document.querySelector('#browse').files;
+
+        // console.log(files);
+
+        function readAndPreview(file) {
+            // Make sure `file.name` matches our extensions criteria
+            if (/\.(jpe?g|png|gif)$/i.test(file.name)) {
+                var reader = new FileReader();
+
+                reader.addEventListener("load", function () {
+                    var image = new Image();
+                    image.height = 100;
+                    image.style.marginRight = '15px';
+                    image.title = file.name;
+                    image.src = this.result;
+                    preview.appendChild(image);
+                }, false);
+
+                reader.readAsDataURL(file);
+            }
+
+        }
+
+        if (files) {
+            [].forEach.call(files, readAndPreview);
+        }
+    }
 </script>
 </body>
 </html>

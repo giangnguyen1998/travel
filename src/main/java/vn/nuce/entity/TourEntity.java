@@ -3,6 +3,7 @@ package vn.nuce.entity;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.sql.Timestamp;
+import java.util.List;
 
 @Entity
 @Table(name = "tour")
@@ -22,6 +23,16 @@ public class TourEntity implements Serializable {
     private Long tourPrice;
     @Column(name = "breakfast")
     private Long tourBreakFast;
+    @OneToMany(mappedBy = "tourEntity", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    private List<ImageEntity> imageEntities;
+
+    public List<ImageEntity> getImageEntities() {
+        return imageEntities;
+    }
+
+    public void setImageEntities(List<ImageEntity> imageEntities) {
+        this.imageEntities = imageEntities;
+    }
 
     public Long getTourId() {
         return tourId;

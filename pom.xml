@@ -41,7 +41,6 @@
         </plugins>
     </build>
     <dependencies>
-        <!--        mail-->
         <!-- https://mvnrepository.com/artifact/org.freemarker/freemarker -->
         <dependency>
             <groupId>org.freemarker</groupId>

@@ -7,100 +7,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39cefc7d-496a-4286-a46f-369008164b65" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/nuce/controllers/admin/AdminTourController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/nuce/dto/ImageDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/nuce/dto/TourDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/nuce/entity/TourEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/nuce/repository/TourRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/nuce/repository/impl/TourRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/nuce/service/TourService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/nuce/service/impl/TourServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/tour.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/tour_info.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/changelog.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/jquery.tinymce.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/license.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/advlist/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/anchor/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/autolink/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/autoresize/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/autosave/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/bbcode/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/charmap/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/code/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/codesample/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/colorpicker/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/contextmenu/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/directionality/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/emoticons/js/emojis.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/emoticons/js/emojis.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/emoticons/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/fullpage/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/fullscreen/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/help/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/hr/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/image/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/imagetools/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/importcss/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/insertdatetime/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/legacyoutput/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/link/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/lists/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/media/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/nonbreaking/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/noneditable/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/pagebreak/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/paste/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/preview/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/print/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/quickbars/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/save/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/searchreplace/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/spellchecker/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/tabfocus/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/table/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/template/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/textcolor/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/textpattern/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/toc/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/visualblocks/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/visualchars/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/plugins/wordcount/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/skins/content/default/content.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/skins/content/document/content.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/skins/content/writer/content.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/skins/ui/oxide-dark/content.inline.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/skins/ui/oxide-dark/content.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/skins/ui/oxide-dark/content.mobile.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/skins/ui/oxide-dark/fonts/tinymce-mobile.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/skins/ui/oxide-dark/skin.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/skins/ui/oxide-dark/skin.mobile.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/skins/ui/oxide/content.inline.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/skins/ui/oxide/content.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/skins/ui/oxide/content.mobile.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/skins/ui/oxide/fonts/tinymce-mobile.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/skins/ui/oxide/skin.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/skins/ui/oxide/skin.mobile.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/themes/mobile/theme.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/themes/silver/theme.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/tinymce/js/tinymce/tinymce.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vn/nuce/entity/ImageEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vn/nuce/repository/ImageRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vn/nuce/repository/impl/ImageRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vn/nuce/service/ImageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vn/nuce/service/impl/ImageServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/nuce/controllers/admin/AdminHomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/nuce/controllers/admin/AdminHomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/nuce/data/impl/CrudRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/nuce/data/impl/CrudRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/nuce/controllers/admin/AdminTourController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/nuce/controllers/admin/AdminTourController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/nuce/dto/TourDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/nuce/dto/TourDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/nuce/entity/TourEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/nuce/entity/TourEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/nuce/service/impl/TourServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/nuce/service/impl/TourServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vn/nuce/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/nuce/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/exampleDispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/exampleDispatcher-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/admin/plugins/dropzone/dropzone.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/admin/plugins/dropzone/dropzone.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/vn/nuce/controllers/admin/AdminHomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vn/nuce/controllers/admin/AdminHomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/vn/nuce/data/impl/CrudRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vn/nuce/data/impl/CrudRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/vn/nuce/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vn/nuce/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/example-1.0-SNAPSHOT/WEB-INF/classes/vn/nuce/controllers/admin/AdminHomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/example-1.0-SNAPSHOT/WEB-INF/classes/vn/nuce/controllers/admin/AdminHomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/example-1.0-SNAPSHOT/WEB-INF/classes/vn/nuce/data/impl/CrudRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/example-1.0-SNAPSHOT/WEB-INF/classes/vn/nuce/data/impl/CrudRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/example-1.0-SNAPSHOT/WEB-INF/classes/vn/nuce/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/example-1.0-SNAPSHOT/WEB-INF/classes/vn/nuce/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/tour_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/tour_info.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/travel.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vn/nuce/controllers/admin/AdminTourController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vn/nuce/controllers/admin/AdminTourController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vn/nuce/dto/TourDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vn/nuce/dto/TourDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vn/nuce/entity/TourEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vn/nuce/entity/TourEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/example-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/example-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/example-1.0-SNAPSHOT/WEB-INF/classes/vn/nuce/controllers/admin/AdminTourController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/example-1.0-SNAPSHOT/WEB-INF/classes/vn/nuce/controllers/admin/AdminTourController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/example-1.0-SNAPSHOT/WEB-INF/classes/vn/nuce/dto/TourDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/example-1.0-SNAPSHOT/WEB-INF/classes/vn/nuce/dto/TourDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/example-1.0-SNAPSHOT/WEB-INF/classes/vn/nuce/entity/TourEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/example-1.0-SNAPSHOT/WEB-INF/classes/vn/nuce/entity/TourEntity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/example-1.0-SNAPSHOT/WEB-INF/exampleDispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/example-1.0-SNAPSHOT/WEB-INF/exampleDispatcher-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/example-1.0-SNAPSHOT/WEB-INF/views/admin/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/example-1.0-SNAPSHOT/WEB-INF/views/admin/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/example-1.0-SNAPSHOT/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/example-1.0-SNAPSHOT/WEB-INF/views/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/example-1.0-SNAPSHOT/WEB-INF/views/admin/tour_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/example-1.0-SNAPSHOT/WEB-INF/views/admin/tour_info.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -130,7 +60,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="C:/Config/apache-maven-3.6.2" />
+        <option name="mavenHome" value="$USER_HOME$/OneDrive/Desktop/apache-maven-3.6.0-bin/apache-maven-3.6.0" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -148,6 +78,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/resources/admin" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
@@ -174,7 +110,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="TOMCAT" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.47" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="TOMCAT" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.27" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="travel:war exploded">
@@ -333,6 +269,8 @@
       <workItem from="1576208964086" duration="1411000" />
       <workItem from="1576210396351" duration="8365000" />
       <workItem from="1576220008820" duration="10110000" />
+      <workItem from="1577156048282" duration="6273000" />
+      <workItem from="1577166470239" duration="6317000" />
     </task>
     <servers />
   </component>
@@ -351,5 +289,12 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
+        <watch expression="fileNames" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

@@ -19,7 +19,7 @@
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
         <property name="url" value="jdbc:mysql://localhost:3306/travel"/>
         <property name="username" value="root"/>
-        <property name="password" value="admin"/>
+        <property name="password" value="giang421998"/>
     </bean>
 
     <bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
@@ -55,6 +55,10 @@
     <context:component-scan base-package="vn.nuce"/>
 
     <mvc:resources mapping="/resources/**" location="/resources/"/>
+
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="maxUploadSize" value="20848820" />
+    </bean>
 
     <mvc:annotation-driven/>
 
