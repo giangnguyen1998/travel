@@ -7,8 +7,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39cefc7d-496a-4286-a46f-369008164b65" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/vn/nuce/controllers/OffersController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/offers.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/single.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/nuce/dto/TourDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/nuce/dto/TourDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/nuce/service/impl/TourServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/nuce/service/impl/TourServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vn/nuce/dto/TourDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vn/nuce/dto/TourDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vn/nuce/service/impl/TourServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vn/nuce/service/impl/TourServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/example-1.0-SNAPSHOT/WEB-INF/classes/vn/nuce/dto/TourDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/example-1.0-SNAPSHOT/WEB-INF/classes/vn/nuce/dto/TourDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/example-1.0-SNAPSHOT/WEB-INF/classes/vn/nuce/service/impl/TourServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/example-1.0-SNAPSHOT/WEB-INF/classes/vn/nuce/service/impl/TourServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/example-1.0-SNAPSHOT/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/example-1.0-SNAPSHOT/WEB-INF/views/home.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -252,6 +262,7 @@
       <workItem from="1577166470239" duration="8289000" />
       <workItem from="1577174800112" duration="900000" />
       <workItem from="1577175778174" duration="110000" />
+      <workItem from="1577419470311" duration="6607000" />
     </task>
     <servers />
   </component>

@@ -80,14 +80,14 @@
                 <div class="row">
                     <div class="col main_nav_col d-flex flex-row align-items-center justify-content-start">
                         <div class="logo_container">
-                            <div class="logo"><a href="#"><img src="<c:url value="/resources/home/images/logo.png"/>"
+                            <div class="logo"><a href="/home"><img src="<c:url value="/resources/home/images/logo.png"/>"
                                                                alt="">travelix</a></div>
                         </div>
                         <div class="main_nav_container ml-auto">
                             <ul class="main_nav_list">
-                                <li class="main_nav_item"><a href="#">home</a></li>
+                                <li class="main_nav_item"><a href="/home">home</a></li>
                                 <li class="main_nav_item"><a href="#">about us</a></li>
-                                <li class="main_nav_item"><a href="#">offers</a></li>
+                                <li class="main_nav_item"><a href="/offers">offers</a></li>
                                 <li class="main_nav_item"><a href="#">news</a></li>
                                 <li class="main_nav_item"><a href="#">contact</a></li>
                             </ul>
@@ -140,9 +140,9 @@
             <div class="logo menu_logo"><a href="#"><img src="<c:url value="/resources/home/images/logo.png"/>" alt=""></a>
             </div>
             <ul>
-                <li class="menu_item"><a href="#">home</a></li>
+                <li class="menu_item"><a href="/home">home</a></li>
                 <li class="menu_item"><a href="#">about us</a></li>
-                <li class="menu_item"><a href="#">offers</a></li>
+                <li class="menu_item"><a href="/offers">offers</a></li>
                 <li class="menu_item"><a href="#">news</a></li>
                 <li class="menu_item"><a href="#">contact</a></li>
             </ul>
@@ -818,7 +818,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="offers_link"><a href="offers.html">read more</a></div>
+                                    <div class="offers_link"><a href="/offers">read more</a></div>
                                 </div>
                             </div>
                         </div>
@@ -865,7 +865,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="offers_link"><a href="offers.html">read more</a></div>
+                                    <div class="offers_link"><a href="/offers">read more</a></div>
                                 </div>
                             </div>
                         </div>
@@ -912,7 +912,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="offers_link"><a href="offers.html">read more</a></div>
+                                    <div class="offers_link"><a href="/offers">read more</a></div>
                                 </div>
                             </div>
                         </div>
@@ -959,7 +959,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="offers_link"><a href="offers.html">read more</a></div>
+                                    <div class="offers_link"><a href="/offers">read more</a></div>
                                 </div>
                             </div>
                         </div>
@@ -1363,7 +1363,7 @@
                                         src="<c:url value="/resources/home/images/footer_blog_1.jpg"/>"
                                         alt="https://unsplash.com/@avidenov"></div>
                                 <div class="footer_blog_content">
-                                    <div class="footer_blog_title"><a href="blog.html">Travel with us this year</a>
+                                    <div class="footer_blog_title"><a href="#">Travel with us this year</a>
                                     </div>
                                     <div class="footer_blog_date">Nov 29, 2017</div>
                                 </div>
@@ -1375,7 +1375,7 @@
                                         src="<c:url value="/resources/home/images/footer_blog_2.jpg"/>"
                                         alt="https://unsplash.com/@deannaritchie"></div>
                                 <div class="footer_blog_content">
-                                    <div class="footer_blog_title"><a href="blog.html">New destinations for you</a>
+                                    <div class="footer_blog_title"><a href="#">New destinations for you</a>
                                     </div>
                                     <div class="footer_blog_date">Nov 29, 2017</div>
                                 </div>
@@ -1387,7 +1387,7 @@
                                         src="<c:url value="/resources/home/images/footer_blog_3.jpg"/>"
                                         alt="https://unsplash.com/@bergeryap87"></div>
                                 <div class="footer_blog_content">
-                                    <div class="footer_blog_title"><a href="blog.html">Travel with us this year</a>
+                                    <div class="footer_blog_title"><a href="#">Travel with us this year</a>
                                     </div>
                                     <div class="footer_blog_date">Nov 29, 2017</div>
                                 </div>
@@ -1483,11 +1483,11 @@
                     <div class="footer_nav_container d-flex flex-row align-items-center justify-content-lg-end">
                         <div class="footer_nav">
                             <ul class="footer_nav_list">
-                                <li class="footer_nav_item"><a href="#">home</a></li>
-                                <li class="footer_nav_item"><a href="about.html">about us</a></li>
-                                <li class="footer_nav_item"><a href="offers.html">offers</a></li>
-                                <li class="footer_nav_item"><a href="blog.html">news</a></li>
-                                <li class="footer_nav_item"><a href="contact.html">contact</a></li>
+                                <li class="footer_nav_item"><a href="/home">home</a></li>
+                                <li class="footer_nav_item"><a href="#">about us</a></li>
+                                <li class="footer_nav_item"><a href="/offers">offers</a></li>
+                                <li class="footer_nav_item"><a href="#">news</a></li>
+                                <li class="footer_nav_item"><a href="#">contact</a></li>
                             </ul>
                         </div>
                     </div>

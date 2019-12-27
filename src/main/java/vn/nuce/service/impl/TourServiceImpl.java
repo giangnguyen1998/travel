@@ -6,6 +6,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import vn.nuce.dto.TourDto;
 import vn.nuce.entity.TourEntity;
+import vn.nuce.repository.ImageRepository;
+import vn.nuce.repository.impl.ImageRepositoryImpl;
 import vn.nuce.repository.impl.TourRepositoryImpl;
 import vn.nuce.service.TourService;
 
@@ -18,6 +20,9 @@ import java.util.List;
 public class TourServiceImpl implements TourService {
     @Autowired
     TourRepositoryImpl repository;
+
+    @Autowired
+    ImageRepositoryImpl imageRepository;
 
     private ModelMapper mapper = null;
 
@@ -41,6 +46,7 @@ public class TourServiceImpl implements TourService {
         List<TourDto> dtos = new ArrayList<>();
         if (entities.size() > 0) {
             for (TourEntity entity : entities) {
+                entity.setImageEntities(imageRepository.findAllImageByTour(entity.getTourId()));
                 dtos.add(getInstanceMapper().map(entity, TourDto.class));
             }
         }

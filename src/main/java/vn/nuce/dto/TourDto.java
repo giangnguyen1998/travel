@@ -22,6 +22,16 @@ public class TourDto implements Serializable {
 
     private Long tourBreakFast;
 
+    private List<ImageDto> imageEntities;
+
+    public List<ImageDto> getImageEntities() {
+        return imageEntities;
+    }
+
+    public void setImageEntities(List<ImageDto> imageEntities) {
+        this.imageEntities = imageEntities;
+    }
+
     public Long getTourId() {
         return tourId;
     }
