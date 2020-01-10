@@ -25,6 +25,16 @@ public class TourEntity implements Serializable {
     private Long tourBreakFast;
     @OneToMany(mappedBy = "tourEntity", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<ImageEntity> imageEntities;
+    @OneToMany(mappedBy = "tourEntity", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    private List<BookEntity> bookEntities;
+
+    public List<BookEntity> getBookEntities() {
+        return bookEntities;
+    }
+
+    public void setBookEntities(List<BookEntity> bookEntities) {
+        this.bookEntities = bookEntities;
+    }
 
     public List<ImageEntity> getImageEntities() {
         return imageEntities;

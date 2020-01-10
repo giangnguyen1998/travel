@@ -3,6 +3,7 @@ package vn.nuce.entity;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.sql.Timestamp;
+import java.util.List;
 
 @Entity
 @Table(name = "user")
@@ -18,6 +19,16 @@ public class UserEntity implements Serializable {
     private String role;
     @Column(name = "fullname")
     private String fullName;
+    @OneToMany(mappedBy = "userEntity", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    private List<BookEntity> bookEntities;
+
+    public List<BookEntity> getBookEntities() {
+        return bookEntities;
+    }
+
+    public void setBookEntities(List<BookEntity> bookEntities) {
+        this.bookEntities = bookEntities;
+    }
 
     public String getFullName() {
         return fullName;
