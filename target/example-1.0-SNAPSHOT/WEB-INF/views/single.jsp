@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="/common/taglib.jsp" %>
 <c:url value="/login" var="loginUrl"/>
-<c:url value="/logout" var="logoutUrl" />
+<c:url value="/logout" var="logoutUrl"/>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -64,7 +64,8 @@
                             </c:when>
                             <c:otherwise>
                                 <div class="user_box ml-auto">
-                                    <div class="user_box_login user_box_link"><a href="/admin/home">Welcome, ${dto.username}</a></div>
+                                    <div class="user_box_login user_box_link"><a
+                                            href="/admin/home">Welcome, ${dto.username}</a></div>
                                     <div class="user_box_register user_box_link"><a href="${logoutUrl}">logout</a></div>
                                 </div>
                             </c:otherwise>
@@ -106,14 +107,14 @@
 											s112.344-22.55,153.287-63.494C489.451,329.123,512,274.686,512,216.78c0-57.904-22.549-112.342-63.494-153.286
 											C407.563,22.549,353.124,0,295.219,0c-57.904,0-112.342,22.549-153.287,63.494C100.988,104.438,78.439,158.876,78.438,216.78z
 											M119.804,216.78c0-96.725,78.69-175.416,175.415-175.416s175.418,78.691,175.418,175.416
-											c0,96.725-78.691,175.416-175.416,175.416C198.495,392.195,119.804,313.505,119.804,216.78z"/>
+											c0,96.725-78.691,175.416-175.416,175.416C198.495,392.195,119.804,313.505,119.804,216.78z"></path>
                                         </g>
                                     </g>
                                     <g>
                                         <g>
                                             <path class="mag_glass" fill="#FFFFFF" d="M6.057,505.942c4.038,4.039,9.332,6.058,14.625,6.058s10.587-2.019,14.625-6.058L171.268,369.98
 											c8.076-8.076,8.076-21.172,0-29.248c-8.076-8.078-21.172-8.078-29.249,0L6.057,476.693
-											C-2.019,484.77-2.019,497.865,6.057,505.942z"/>
+											C-2.019,484.77-2.019,497.865,6.057,505.942z"></path>
                                         </g>
                                     </g>
                                 </g>
@@ -548,7 +549,8 @@
                                     </div>
                                     <div class="hotel_title_button ml-lg-auto text-lg-right">
                                         <div class="button book_button trans_200"><a
-                                                href="#">book<span></span><span></span><span></span></a>
+                                                href="#" data-toggle="modal"
+                                                data-target="#exampleModalCenter">book<span></span><span></span><span></span></a>
                                         </div>
                                         <div class="hotel_map_link_container">
                                             <div class="hotel_map_link">See Location on Map</div>
@@ -985,6 +987,41 @@
 
 </div>
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Modal Book Tour</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="<c:url value="/offers/books"/>" method="post" id="frmBook">
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Phone:</label>
+                        <input type="text" class="form-control" id="recipient-name"
+                               name="phone" maxlength="10" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">Address:</label>
+                        <textarea class="form-control" id="message-text" name="address" required></textarea>
+                    </div>
+                    <c:if test="${not empty tour}">
+                        <input type="hidden" name="tourId" value="${tour.tourId}">
+                    </c:if>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="btnSave">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script src="<c:url value="/resources/home/js/jquery-3.2.1.min.js"/>"></script>
 <script src="<c:url value="/resources/home/styles/bootstrap4/popper.js"/>"></script>
 <script src="<c:url value="/resources/home/styles/bootstrap4/bootstrap.min.js"/>"></script>
@@ -994,7 +1031,22 @@
 <script src="<c:url value="/resources/home/plugins/OwlCarousel2-2.2.1/owl.carousel.js"/>"></script>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
 <script src="<c:url value="/resources/home/js/single_listing_custom.js"/>"></script>
-
+<script>
+    $(document).ready(function () {
+        let status = "${status}";
+        let user = "${dto.fullName}";
+        if (status !== "") {
+            alert(status);
+        }
+        $('#btnSave').on('click', function () {
+            if (user !== "") {
+                $('#frmBook').submit();
+            } else {
+                window.location.href = "/login";
+            }
+        });
+    });
+</script>
 </body>
 
 </html>

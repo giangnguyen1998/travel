@@ -6,9 +6,11 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import vn.nuce.Utils;
+import vn.nuce.dto.BookDto;
 import vn.nuce.dto.ImageDto;
 import vn.nuce.dto.TourDto;
 import vn.nuce.dto.UserDto;
+import vn.nuce.service.BookService;
 import vn.nuce.service.impl.ImageServiceImpl;
 import vn.nuce.service.impl.TourServiceImpl;
 
@@ -20,6 +22,7 @@ import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("ALL")
 @RequestMapping("/admin")
 @Controller
 public class AdminTourController {
@@ -30,16 +33,22 @@ public class AdminTourController {
     @Autowired
     ImageServiceImpl imageService;
 
+    @Autowired
+    BookService bookService;
+
     @GetMapping("/tours")
     public String showPage(HttpSession session, ModelMap modelMap) {
         setUser(session, modelMap);
         List<TourDto> tours = new ArrayList<>();
+        List<BookDto> books = new ArrayList<>();
         try {
             tours = service.findAllTours();
+            books = bookService.getAllBooks();
         } catch (Exception e) {
             e.printStackTrace();
         }
         modelMap.addAttribute("tours", tours);
+        modelMap.addAttribute("books", books);
         if (session.getAttribute("status") != null) {
             modelMap.addAttribute("status", session.getAttribute("status"));
             session.removeAttribute("status");

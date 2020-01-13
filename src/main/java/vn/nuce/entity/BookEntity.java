@@ -6,9 +6,11 @@ import java.io.Serializable;
 @Entity
 @Table(name = "book")
 public class BookEntity implements Serializable {
+    @Id
     @ManyToOne
     @JoinColumn(name = "tourid")
     private TourEntity tourEntity;
+    @Id
     @ManyToOne
     @JoinColumn(name = "userid")
     private UserEntity userEntity;

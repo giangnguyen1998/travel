@@ -452,6 +452,52 @@
                 </div>
             </div>
         </div>
+        <div class="row clearfix">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="card">
+                    <div class="header">
+                        <h2>
+                            TABLE BOOK
+                        </h2>
+                    </div>
+                    <div class="body">
+                        <div class="table-responsive">
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped table-hover js-basic-example dataTable"
+                                       >
+                                    <thead>
+                                    <tr>
+                                        <th>Username</th>
+                                        <th>TourName</th>
+                                        <th>Phone</th>
+                                        <th>Address</th>
+                                    </tr>
+                                    </thead>
+                                    <tfoot>
+                                    <tr>
+                                        <th>Username</th>
+                                        <th>TourName</th>
+                                        <th>Phone</th>
+                                        <th>Address</th>
+                                    </tr>
+                                    </tfoot>
+                                    <tbody>
+                                    <c:forEach var="book" items="${books}">
+                                        <tr>
+                                            <td>${book.userEntity.username}</td>
+                                            <td>${book.tourEntity.tourName}</td>
+                                            <td>${book.phone}</td>
+                                            <td>${book.address}</td>
+                                        </tr>
+                                    </c:forEach>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- #END# Basic Examples -->
     </div>
 </section>
