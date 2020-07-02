@@ -16,7 +16,7 @@
         <junit.version>4.12</junit.version>
         <jsp.version>2.3.1</jsp.version>
         <jstl.version>1.2</jstl.version>
-        <mysql.version>8.0.15</mysql.version>
+        <mysql.version>8.0.16</mysql.version>
         <opensymphony.version>2.4.2</opensymphony.version>
         <hibernate.core.version>5.2.10.Final</hibernate.core.version>
         <commons.dbcp.version>1.4</commons.dbcp.version>
