@@ -24,7 +24,7 @@
         <validation.version>2.0.1.Final</validation.version>
         <log4j.version>1.2.17</log4j.version>
         <jaxb.api.version>2.3.0</jaxb.api.version>
-        <jackson.core.version>2.9.3</jackson.core.version>
+        <jackson.core.version>2.12.1</jackson.core.version>
         <model.mapper.version>2.0.0</model.mapper.version>
         <springsecurity.version>5.1.5.RELEASE</springsecurity.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
